@@ -1,0 +1,47 @@
+<!--Navbar-->
+<nav class="bg-gray-300">
+    <div class="mx-auto px-6 ">
+        <div class="flex justify-between items-center">
+            <div class="flex">
+                <!--Logo-->
+                <div class="m-4 w-20 flex items-center">
+                    <a href="/"><img src="logo.jpg" alt="logo"></a>
+                </div>
+                <!--Links-->
+                <div class="my-4 hidden md:flex p-3 space-x-4 text-black font-semibold items-center">
+                    <a href="/" class=" hover:text-blue-500">Home</a>
+                    <a href="/blog" class=" hover:text-blue-500">Blog</a>
+                    <a href="/about" class=" hover:text-blue-500">About</a>
+                </div>
+            </div>
+            <!--Sign-In-->
+            <div class="hidden md:flex">
+                <a href="/login" class="inline-block p-4 my-5 mx-2 bg-green-500 text-white border rounder hover:border-current hover:text-gray-900">Sign-In</a>
+                <a href="/register" class="inline-block p-4 my-5 bg-yellow-500 text-white border rounded hover:border-current    hover:text-gray-900">Sign-Up</a>
+            </div>
+            <!--Hamburger-->
+            <div class="cursor-pointer md:hidden p-4" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+        </div>
+    </div>  
+<!--Mobile Menu-->
+    <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col mx-auto">
+        <a href="/" class="hover:text-gray-900">Home</a>
+        <a href="/blog" class="hover:text-gray-900">Blog</a>
+        <a href="/about" class="hover:text-gray-900">About</a>
+        <a href="/login" class="inline-block p-4 m-4 bg-green-500 text-white border rounder hover:border-current hover:text-gray-900">Login</a>
+        <a href="/register" class="inline-block p-4 mx-4 bg-yellow-500 text-white border rounded hover:border-current    hover:text-gray-900">Sign-Up</a>
+        </div>
+    </div>
+</nav>
+<script>
+    const burger = document.querySelector("#burger");
+    const menu = document.querySelector("#mobile-menu");
+    burger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
