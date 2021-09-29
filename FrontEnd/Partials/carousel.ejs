@@ -2,37 +2,43 @@
 .slider{
 display:none
 }
+.dot:active{
+    background-color:black;
+}
+.dots:hover{
+    background-color:black;
+}
 </style>
 <div class="mb-52">
 <div class="relative">
     <!-- Full-width images with number and caption text -->
     <div class="slider animate-fade">
         <div class="text-gray-100 text-sm px-3 py-3 bottom-2 top-0 absolute">1 / 5</div>
-        <a href="/tech"><img src="img1.jpg" alt="img" class="w-screen h-96"></a>
+        <a href="/tech"><img src="img1.jpg" alt="img" class="w-screen h-80"></a>
         <div class="text-white text-center bottom-2 -mt-9 mx-auto px-2 py-3 text-base w-3">Tech</div>
     </div>
 
     <div class="slider animate-fade">
         <div class="text-gray-100 text-sm px-3 py-3  bottom-2 top-0 absolute">2 / 5</div>
-        <a href="/arts"><img src="img2.jpg" alt="img" class="w-screen h-96"></a>
+        <a href="/arts"><img src="img2.jpg" alt="img" class="w-screen h-80"></a>
         <div class="text-white text-center bottom-2 -mt-9 mx-auto px-2 py-3 text-base w-3 h-full">Arts</div>
     </div>
 
     <div class="slider animate-fade">
         <div class="text-gray-100 text-sm px-3 py-3  bottom-2 top-0 absolute">3 / 5</div>
-        <a href="/gaming"><img src="img3.jpg" alt="img" class="w-screen h-96"></a>
+        <a href="/gaming"><img src="img3.jpg" alt="img" class="w-screen h-80"></a>
         <div class="text-white text-center bottom-2 -mt-9 mx-auto px-2 py-3 text-base w-3 h-full">Gaming</div>
     </div>
 
     <div class="slider animate-fade">
         <div class="text-gray-100 text-sm px-3 py-3  bottom-2 top-0 absolute">4 / 5</div>
-        <a href="/sports"><img src="img4.jpg" alt="img" class="w-screen h-96"></a>
+        <a href="/sports"><img src="img4.jpg" alt="img" class="w-screen h-80"></a>
         <div class="text-white text-center bottom-2 -mt-9 mx-auto px-2 py-3 text-base w-3 h-full">Sports</div>
     </div>
 
     <div class="slider animate-fade">
         <div class="text-gray-100 text-sm px-3 py-3  bottom-2 top-0 absolute">5 / 5</div>
-        <a href="/science"><img src="img5.jpg" alt="img" class="w-screen h-96"></a>
+        <a href="/science"><img src="img5.jpg" alt="img" class="w-screen h-80"></a>
         <div class="text-white text-center bottom-2 -mt-9 mx-auto px-2 py-3 text-base w-3 h-full">Science</div>
     </div>
     <!-- Next and previous buttons -->
@@ -45,11 +51,11 @@ display:none
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear hover:bg-black" onclick="currentSlide(1)"></span>
-    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear hover:bg-black" onclick="currentSlide(2)"></span>
-    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear hover:bg-black" onclick="currentSlide(3)"></span>
-    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear hover:bg-black" onclick="currentSlide(4)"></span>
-    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear hover:bg-black" onclick="currentSlide(5)"></span>
+    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear" onclick="currentSlide(1)"></span>
+    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear" onclick="currentSlide(2)"></span>
+    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear" onclick="currentSlide(3)"></span>
+    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear" onclick="currentSlide(4)"></span>
+    <span class="dot inline-block cursor-pointer h-4 w-4 mx-0 my-0.5 -mb-40 rounded-r-sm bg-gray-500 transition 0.6s ease-linear" onclick="currentSlide(5)"></span>
 </div>
 </div>
 <script>
